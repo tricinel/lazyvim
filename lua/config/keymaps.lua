@@ -26,3 +26,7 @@ vim.keymap.set("n", "gl", "$") -- Move to the end of the line
 vim.keymap.set("n", "gh", "^") -- Move to the beginning of the line
 
 vim.keymap.set("n", "U", "<c-r>") -- Redo
+
+-- Working with files
+vim.keymap.set("n", "QQ", ":q!<enter>", { noremap = false })
+vim.keymap.set("n", "WW", ":w!<enter>", { noremap = false })
