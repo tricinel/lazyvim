@@ -30,3 +30,9 @@ vim.keymap.set("n", "U", "<c-r>") -- Redo
 -- Working with files
 vim.keymap.set("n", "QQ", ":q!<enter>", { noremap = false })
 vim.keymap.set("n", "WW", ":w!<enter>", { noremap = false })
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = false })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = false })
+
+vim.keymap.set("n", "n", "nzzzv", { noremap = false })
+vim.keymap.set("n", "N", "Nzzzv", { noremap = false })
