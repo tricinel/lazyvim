@@ -20,10 +20,10 @@ vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
-vim.keymap.set("i", "jj", "<Esc>")
+vim.keymap.set("i", "jj", "<Esc>", { noremap = false })
 
-vim.keymap.set("n", "gl", "$") -- Move to the end of the line
-vim.keymap.set("n", "gh", "^") -- Move to the beginning of the line
+vim.keymap.set("n", "E", "$") -- Move to the end of the line
+vim.keymap.set("n", "B", "^") -- Move to the beginning of the line
 
 vim.keymap.set("n", "U", "<c-r>") -- Redo
 
@@ -42,3 +42,10 @@ vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }
 vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make windows equal size" })
 vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
+
+-- Working with buffers
+vim.keymap.set("n", "tk", ":blast<enter>", { noremap = false })
+vim.keymap.set("n", "tj", ":bfirst<enter>", { noremap = false })
+vim.keymap.set("n", "th", ":bprev<enter>", { noremap = false })
+vim.keymap.set("n", "tl", ":bnext<enter>", { noremap = false })
+vim.keymap.set("n", "td", ":bdelete<enter>", { noremap = false })

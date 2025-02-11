@@ -9,3 +9,6 @@ vim.opt.scrolloff = 10
 
 -- Don't put new windows below current
 vim.opt.splitbelow = false
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
